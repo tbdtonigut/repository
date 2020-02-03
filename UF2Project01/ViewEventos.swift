@@ -19,6 +19,11 @@ class ViewEventos: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        //Table metodo nill
+        //Celda custom identificador, poner nombre
+        //Cambiar tipo de la celda al tipo personalizado
+        
     }
     
 }

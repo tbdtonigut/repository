@@ -9,11 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="UF2Project02" customModuleProvider="target">
             <connections>
-                <outlet property="Ciclista" destination="MZf-Cc-A4c" id="v3U-fy-Rwc"/>
-                <outlet property="ciclista" destination="MZf-Cc-A4c" id="qi9-3N-EoR"/>
-                <outlet property="equipo" destination="tkP-mi-aWl" id="S88-ob-m6w"/>
-                <outlet property="evento" destination="RmG-Fs-fXx" id="uj1-ao-2TQ"/>
-                <outlet property="tabbar" destination="ugP-PY-Tja" id="trj-vz-NPn"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bnO-tM-VuV"/>
             </connections>
         </placeholder>
@@ -29,23 +24,10 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugP-PY-Tja">
-                    <rect key="frame" x="0.0" y="803" width="414" height="49"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem title="Item" image="square.and.arrow.up" catalog="system" id="RmG-Fs-fXx"/>
-                        <tabBarItem title="Item" image="square.and.arrow.up" catalog="system" id="MZf-Cc-A4c"/>
-                        <tabBarItem title="Item" image="square.and.arrow.up" catalog="system" id="tkP-mi-aWl"/>
-                    </items>
-                </tabBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
         </view>
     </objects>
-    <resources>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
-    </resources>
 </document>
