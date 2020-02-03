@@ -5,6 +5,12 @@
       location = "group:UF2Project01.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:/Users/tonigutierrezsanchez/repository/UF2Project01/LaunchScreen.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tonigutierrezsanchez/repository/UF2Project01/Info.plist">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

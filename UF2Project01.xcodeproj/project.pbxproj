@@ -7,48 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		336365E123E09CCF00766C08 /* ViewEventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365DF23E09CCF00766C08 /* ViewEventos.swift */; };
-		336365E223E09CCF00766C08 /* ViewEventos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336365E023E09CCF00766C08 /* ViewEventos.xib */; };
-		336365E523E09CF000766C08 /* ViewEquipos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365E323E09CF000766C08 /* ViewEquipos.swift */; };
-		336365E623E09CF000766C08 /* ViewEquipos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336365E423E09CF000766C08 /* ViewEquipos.xib */; };
-		336365E923E09D0700766C08 /* ViewCiclistas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365E723E09D0700766C08 /* ViewCiclistas.swift */; };
-		336365EA23E09D0700766C08 /* ViewCiclistas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336365E823E09D0700766C08 /* ViewCiclistas.xib */; };
 		336365EC23E09E2500766C08 /* Ciclista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365EB23E09E2500766C08 /* Ciclista.swift */; };
 		336365EE23E0A09300766C08 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365ED23E0A09300766C08 /* Evento.swift */; };
 		336365F023E0A0A000766C08 /* Equipo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365EF23E0A0A000766C08 /* Equipo.swift */; };
 		CC41C7BD47F03ED99474DA91 /* Pods_UF2Project01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */; };
+		ED5294D923E87ADE004A8AB9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294D823E87ADE004A8AB9 /* TabBarController.swift */; };
+		ED5294DC23E886FB004A8AB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294DB23E886FB004A8AB9 /* ThemeManager.swift */; };
+		ED5294E223E88827004A8AB9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294E023E88827004A8AB9 /* EventViewController.swift */; };
+		ED5294E323E88827004A8AB9 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5294E123E88827004A8AB9 /* EventViewController.xib */; };
+		ED5294E623E88862004A8AB9 /* CyclistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294E423E88862004A8AB9 /* CyclistViewController.swift */; };
+		ED5294E723E88862004A8AB9 /* CyclistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5294E523E88862004A8AB9 /* CyclistViewController.xib */; };
+		ED5294EA23E899B6004A8AB9 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294E823E899B6004A8AB9 /* TeamViewController.swift */; };
+		ED5294EB23E899B6004A8AB9 /* TeamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5294E923E899B6004A8AB9 /* TeamViewController.xib */; };
+		ED5294F723E8A3C1004A8AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5294F623E8A3C1004A8AB9 /* Assets.xcassets */; };
+		ED5294FA23E8A86D004A8AB9 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294F823E8A86D004A8AB9 /* EventTableViewCell.swift */; };
+		ED5294FB23E8A86D004A8AB9 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED5294F923E8A86D004A8AB9 /* EventTableViewCell.xib */; };
 		ED8D9AEF23D6037300647A7D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8D9AED23D6037300647A7D /* LoginViewController.xib */; };
 		ED8D9AF023D6037300647A7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8D9AEE23D6037300647A7D /* LoginViewController.swift */; };
 		EDA72DC7238EBF6500F79D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72DC6238EBF6500F79D32 /* AppDelegate.swift */; };
 		EDA72DC9238EBF6500F79D32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72DC8238EBF6500F79D32 /* SceneDelegate.swift */; };
 		EDA72DCB238EBF6500F79D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72DCA238EBF6500F79D32 /* ViewController.swift */; };
-		EDA72DD0238EBF6600F79D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA72DCF238EBF6600F79D32 /* Assets.xcassets */; };
-		EDA72DD3238EBF6600F79D32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA72DD1238EBF6600F79D32 /* LaunchScreen.storyboard */; };
 		EDA72DDB238EC56900F79D32 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA72DDA238EC56900F79D32 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		312EE3F4B4DAD017338F1781 /* Pods-UF2Project01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UF2Project01.release.xcconfig"; path = "Target Support Files/Pods-UF2Project01/Pods-UF2Project01.release.xcconfig"; sourceTree = "<group>"; };
-		336365DF23E09CCF00766C08 /* ViewEventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEventos.swift; sourceTree = "<group>"; };
-		336365E023E09CCF00766C08 /* ViewEventos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewEventos.xib; sourceTree = "<group>"; };
-		336365E323E09CF000766C08 /* ViewEquipos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEquipos.swift; sourceTree = "<group>"; };
-		336365E423E09CF000766C08 /* ViewEquipos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewEquipos.xib; sourceTree = "<group>"; };
-		336365E723E09D0700766C08 /* ViewCiclistas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCiclistas.swift; sourceTree = "<group>"; };
-		336365E823E09D0700766C08 /* ViewCiclistas.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCiclistas.xib; sourceTree = "<group>"; };
 		336365EB23E09E2500766C08 /* Ciclista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ciclista.swift; sourceTree = "<group>"; };
 		336365ED23E0A09300766C08 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		336365EF23E0A0A000766C08 /* Equipo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipo.swift; sourceTree = "<group>"; };
 		46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UF2Project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5400FB59CD59F45D4FC398A5 /* Pods-UF2Project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UF2Project01.debug.xcconfig"; path = "Target Support Files/Pods-UF2Project01/Pods-UF2Project01.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5294D823E87ADE004A8AB9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		ED5294DB23E886FB004A8AB9 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		ED5294E023E88827004A8AB9 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		ED5294E123E88827004A8AB9 /* EventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
+		ED5294E423E88862004A8AB9 /* CyclistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclistViewController.swift; sourceTree = "<group>"; };
+		ED5294E523E88862004A8AB9 /* CyclistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CyclistViewController.xib; sourceTree = "<group>"; };
+		ED5294E823E899B6004A8AB9 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		ED5294E923E899B6004A8AB9 /* TeamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamViewController.xib; sourceTree = "<group>"; };
+		ED5294F023E8A0CE004A8AB9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = /Users/tonigutierrezsanchez/repository/UF2Project01/LaunchScreen.storyboard; sourceTree = "<absolute>"; };
+		ED5294F623E8A3C1004A8AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED5294F823E8A86D004A8AB9 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		ED5294F923E8A86D004A8AB9 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		ED8D9AED23D6037300647A7D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		ED8D9AEE23D6037300647A7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EDA72DC3238EBF6500F79D32 /* UF2Project02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UF2Project02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA72DC6238EBF6500F79D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA72DC8238EBF6500F79D32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDA72DCA238EBF6500F79D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDA72DCF238EBF6600F79D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EDA72DD2238EBF6600F79D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EDA72DD4238EBF6600F79D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA72DDA238EC56900F79D32 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,10 +87,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ED5294D423E8784B004A8AB9 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				336365ED23E0A09300766C08 /* Evento.swift */,
+				336365EF23E0A0A000766C08 /* Equipo.swift */,
+				336365EB23E09E2500766C08 /* Ciclista.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		ED5294D723E87937004A8AB9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EDA72DC6238EBF6500F79D32 /* AppDelegate.swift */,
+				EDA72DC8238EBF6500F79D32 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		ED5294DA23E87AE4004A8AB9 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				ED5294D823E87ADE004A8AB9 /* TabBarController.swift */,
+				ED5294DB23E886FB004A8AB9 /* ThemeManager.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
 		EDA72DBA238EBF6500F79D32 = {
 			isa = PBXGroup;
 			children = (
 				EDA72DC5238EBF6500F79D32 /* UF2Project01 */,
+				ED5294DA23E87AE4004A8AB9 /* Workers */,
+				ED5294D723E87937004A8AB9 /* Support */,
+				ED5294D423E8784B004A8AB9 /* Modelo */,
 				EDA72DC4238EBF6500F79D32 /* Products */,
 				345C8727BBF5F2C300682FE5 /* Pods */,
 				67CE42264D97C6BC94A38685 /* Frameworks */,
@@ -102,24 +139,20 @@
 		EDA72DC5238EBF6500F79D32 /* UF2Project01 */ = {
 			isa = PBXGroup;
 			children = (
-				EDA72DC6238EBF6500F79D32 /* AppDelegate.swift */,
-				EDA72DC8238EBF6500F79D32 /* SceneDelegate.swift */,
+				ED5294F023E8A0CE004A8AB9 /* LaunchScreen.storyboard */,
+				ED5294E023E88827004A8AB9 /* EventViewController.swift */,
+				ED5294F823E8A86D004A8AB9 /* EventTableViewCell.swift */,
+				ED5294F923E8A86D004A8AB9 /* EventTableViewCell.xib */,
+				ED5294E423E88862004A8AB9 /* CyclistViewController.swift */,
+				ED5294E523E88862004A8AB9 /* CyclistViewController.xib */,
+				ED5294E123E88827004A8AB9 /* EventViewController.xib */,
+				ED5294E823E899B6004A8AB9 /* TeamViewController.swift */,
+				ED5294E923E899B6004A8AB9 /* TeamViewController.xib */,
 				EDA72DCA238EBF6500F79D32 /* ViewController.swift */,
 				EDA72DDA238EC56900F79D32 /* ViewController.xib */,
 				ED8D9AEE23D6037300647A7D /* LoginViewController.swift */,
 				ED8D9AED23D6037300647A7D /* LoginViewController.xib */,
-				EDA72DCF238EBF6600F79D32 /* Assets.xcassets */,
-				EDA72DD1238EBF6600F79D32 /* LaunchScreen.storyboard */,
-				EDA72DD4238EBF6600F79D32 /* Info.plist */,
-				336365DF23E09CCF00766C08 /* ViewEventos.swift */,
-				336365E023E09CCF00766C08 /* ViewEventos.xib */,
-				336365E323E09CF000766C08 /* ViewEquipos.swift */,
-				336365E423E09CF000766C08 /* ViewEquipos.xib */,
-				336365E723E09D0700766C08 /* ViewCiclistas.swift */,
-				336365E823E09D0700766C08 /* ViewCiclistas.xib */,
-				336365EB23E09E2500766C08 /* Ciclista.swift */,
-				336365ED23E0A09300766C08 /* Evento.swift */,
-				336365EF23E0A0A000766C08 /* Equipo.swift */,
+				ED5294F623E8A3C1004A8AB9 /* Assets.xcassets */,
 			);
 			path = UF2Project01;
 			sourceTree = "<group>";
@@ -186,12 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED8D9AEF23D6037300647A7D /* LoginViewController.xib in Resources */,
-				EDA72DD3238EBF6600F79D32 /* LaunchScreen.storyboard in Resources */,
+				ED5294EB23E899B6004A8AB9 /* TeamViewController.xib in Resources */,
+				ED5294E723E88862004A8AB9 /* CyclistViewController.xib in Resources */,
+				ED5294E323E88827004A8AB9 /* EventViewController.xib in Resources */,
+				ED5294F723E8A3C1004A8AB9 /* Assets.xcassets in Resources */,
 				EDA72DDB238EC56900F79D32 /* ViewController.xib in Resources */,
-				336365EA23E09D0700766C08 /* ViewCiclistas.xib in Resources */,
-				336365E223E09CCF00766C08 /* ViewEventos.xib in Resources */,
-				EDA72DD0238EBF6600F79D32 /* Assets.xcassets in Resources */,
-				336365E623E09CF000766C08 /* ViewEquipos.xib in Resources */,
+				ED5294FB23E8A86D004A8AB9 /* EventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,31 +294,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5294E623E88862004A8AB9 /* CyclistViewController.swift in Sources */,
+				ED5294EA23E899B6004A8AB9 /* TeamViewController.swift in Sources */,
 				ED8D9AF023D6037300647A7D /* LoginViewController.swift in Sources */,
-				336365E123E09CCF00766C08 /* ViewEventos.swift in Sources */,
+				ED5294D923E87ADE004A8AB9 /* TabBarController.swift in Sources */,
+				ED5294FA23E8A86D004A8AB9 /* EventTableViewCell.swift in Sources */,
 				EDA72DCB238EBF6500F79D32 /* ViewController.swift in Sources */,
 				EDA72DC7238EBF6500F79D32 /* AppDelegate.swift in Sources */,
 				EDA72DC9238EBF6500F79D32 /* SceneDelegate.swift in Sources */,
+				ED5294E223E88827004A8AB9 /* EventViewController.swift in Sources */,
 				336365EC23E09E2500766C08 /* Ciclista.swift in Sources */,
 				336365F023E0A0A000766C08 /* Equipo.swift in Sources */,
 				336365EE23E0A09300766C08 /* Evento.swift in Sources */,
-				336365E523E09CF000766C08 /* ViewEquipos.swift in Sources */,
-				336365E923E09D0700766C08 /* ViewCiclistas.swift in Sources */,
+				ED5294DC23E886FB004A8AB9 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EDA72DD1238EBF6600F79D32 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDA72DD2238EBF6600F79D32 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EDA72DD5238EBF6600F79D32 /* Debug */ = {

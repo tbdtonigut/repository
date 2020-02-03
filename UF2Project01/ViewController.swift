@@ -13,10 +13,6 @@ import GoogleSignIn
 class ViewController: UIViewController {
         
     
-    @IBOutlet weak var equipo: UITabBarItem!
-    @IBOutlet weak var ciclista: UITabBarItem!
-    @IBOutlet weak var evento: UITabBarItem!
-    @IBOutlet weak var tabbar: UITabBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
