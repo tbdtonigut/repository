@@ -8,23 +8,33 @@
 
 import UIKit
 
-class TeamViewController: UIViewController {
+class TeamViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var arrayNombres: [String] = ["Team", "Team2", "Team3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView()
+        
+        tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return arrayNombres.count
+       }
+       
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+           let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! TeamTableViewCell
+           
+           myCell.lblTeamName.text = arrayNombres[indexPath.row]
+           
+           return myCell
+       }
 
 }

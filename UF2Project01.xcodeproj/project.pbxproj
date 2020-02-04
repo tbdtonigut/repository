@@ -11,6 +11,8 @@
 		336365EE23E0A09300766C08 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365ED23E0A09300766C08 /* Evento.swift */; };
 		336365F023E0A0A000766C08 /* Equipo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365EF23E0A0A000766C08 /* Equipo.swift */; };
 		CC41C7BD47F03ED99474DA91 /* Pods_UF2Project01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */; };
+		ED3C54B023E9D3AC00F668F5 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C54AE23E9D3AC00F668F5 /* TeamTableViewCell.swift */; };
+		ED3C54B123E9D3AC00F668F5 /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3C54AF23E9D3AC00F668F5 /* TeamTableViewCell.xib */; };
 		ED5294D923E87ADE004A8AB9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294D823E87ADE004A8AB9 /* TabBarController.swift */; };
 		ED5294DC23E886FB004A8AB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294DB23E886FB004A8AB9 /* ThemeManager.swift */; };
 		ED5294E223E88827004A8AB9 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294E023E88827004A8AB9 /* EventViewController.swift */; };
@@ -37,6 +39,8 @@
 		336365EF23E0A0A000766C08 /* Equipo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipo.swift; sourceTree = "<group>"; };
 		46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UF2Project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5400FB59CD59F45D4FC398A5 /* Pods-UF2Project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UF2Project01.debug.xcconfig"; path = "Target Support Files/Pods-UF2Project01/Pods-UF2Project01.debug.xcconfig"; sourceTree = "<group>"; };
+		ED3C54AE23E9D3AC00F668F5 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		ED3C54AF23E9D3AC00F668F5 /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
 		ED5294D823E87ADE004A8AB9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		ED5294DB23E886FB004A8AB9 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		ED5294E023E88827004A8AB9 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -140,14 +144,16 @@
 			isa = PBXGroup;
 			children = (
 				ED5294F023E8A0CE004A8AB9 /* LaunchScreen.storyboard */,
-				ED5294E023E88827004A8AB9 /* EventViewController.swift */,
 				ED5294F823E8A86D004A8AB9 /* EventTableViewCell.swift */,
 				ED5294F923E8A86D004A8AB9 /* EventTableViewCell.xib */,
-				ED5294E423E88862004A8AB9 /* CyclistViewController.swift */,
-				ED5294E523E88862004A8AB9 /* CyclistViewController.xib */,
+				ED3C54AE23E9D3AC00F668F5 /* TeamTableViewCell.swift */,
+				ED3C54AF23E9D3AC00F668F5 /* TeamTableViewCell.xib */,
+				ED5294E023E88827004A8AB9 /* EventViewController.swift */,
 				ED5294E123E88827004A8AB9 /* EventViewController.xib */,
 				ED5294E823E899B6004A8AB9 /* TeamViewController.swift */,
 				ED5294E923E899B6004A8AB9 /* TeamViewController.xib */,
+				ED5294E423E88862004A8AB9 /* CyclistViewController.swift */,
+				ED5294E523E88862004A8AB9 /* CyclistViewController.xib */,
 				EDA72DCA238EBF6500F79D32 /* ViewController.swift */,
 				EDA72DDA238EC56900F79D32 /* ViewController.xib */,
 				ED8D9AEE23D6037300647A7D /* LoginViewController.swift */,
@@ -218,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3C54B123E9D3AC00F668F5 /* TeamTableViewCell.xib in Resources */,
 				ED8D9AEF23D6037300647A7D /* LoginViewController.xib in Resources */,
 				ED5294EB23E899B6004A8AB9 /* TeamViewController.xib in Resources */,
 				ED5294E723E88862004A8AB9 /* CyclistViewController.xib in Resources */,
@@ -298,6 +305,7 @@
 				ED5294EA23E899B6004A8AB9 /* TeamViewController.swift in Sources */,
 				ED8D9AF023D6037300647A7D /* LoginViewController.swift in Sources */,
 				ED5294D923E87ADE004A8AB9 /* TabBarController.swift in Sources */,
+				ED3C54B023E9D3AC00F668F5 /* TeamTableViewCell.swift in Sources */,
 				ED5294FA23E8A86D004A8AB9 /* EventTableViewCell.swift in Sources */,
 				EDA72DCB238EBF6500F79D32 /* ViewController.swift in Sources */,
 				EDA72DC7238EBF6500F79D32 /* AppDelegate.swift in Sources */,

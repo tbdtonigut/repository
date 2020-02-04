@@ -1,17 +1,17 @@
 //
-//  EventTableViewCell.swift
+//  TeamTableViewCell.swift
 //  UF2Project01
 //
-//  Created by Toni Gutiérrez Sánchez  on 03/02/2020.
+//  Created by Toni Gutiérrez Sánchez  on 04/02/2020.
 //  Copyright © 2020 Toni Gutiérrez Sánchez . All rights reserved.
 //
 
 import UIKit
 
-class EventTableViewCell: UITableViewCell {
+class TeamTableViewCell: UITableViewCell {
 
-
-    @IBOutlet weak var lblEventName: UILabel!
+    
+    @IBOutlet weak var lblTeamName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
