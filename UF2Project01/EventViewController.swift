@@ -12,6 +12,8 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
+    var arrayNombres: [String] = ["Nombre", "Nombre2", "Nombre3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,15 +21,19 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         
-
+        tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           <#code#>
+        return arrayNombres.count
        }
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           <#code#>
+        let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! EventTableViewCell
+        
+        myCell.lblEventName.text = arrayNombres[indexPath.row]
+        
+        return myCell
        }
 }
