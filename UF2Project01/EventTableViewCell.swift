@@ -1,14 +1,14 @@
 //
-//  ViewEquipos.swift
+//  EventTableViewCell.swift
 //  UF2Project01
 //
-//  Created by dam on 28/01/2020.
+//  Created by Toni Gutiérrez Sánchez  on 03/02/2020.
 //  Copyright © 2020 Toni Gutiérrez Sánchez . All rights reserved.
 //
 
 import UIKit
 
-class ViewEquipos: UITableViewCell {
+class EventTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
