@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Equipo: Object {
+    
+    @objc dynamic var nombre : String = ""
+    @objc dynamic var manager : String = ""
+    @objc dynamic var pais : String = ""
+    
+    convenience init(nombre: String, manager: String, pais: String) {
+        self.init()
+        
+        self.nombre = nombre
+        self.manager = manager
+        self.pais = pais
+    }
+    
+}

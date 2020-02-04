@@ -12,6 +12,8 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
+    var equipos:[Equipo] = []
+    
     var arrayNombres: [String] = ["Team", "Team2", "Team3"]
 
     override func viewDidLoad() {
@@ -21,19 +23,24 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.tableFooterView = UIView()
         
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
+        
+//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Toni", manager: "Carlos", pais: "Españita"))
+//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
+//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
+        
+        equipos = Array(DBManager.sharedInstance.getDataTeam()!)
     }
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return arrayNombres.count
+            return equipos.count
        }
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
            let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! TeamTableViewCell
            
-           myCell.lblTeamName.text = arrayNombres[indexPath.row]
-           
+        myCell.lblTeamName.text = equipos[indexPath.row].nombre
            return myCell
        }
 
