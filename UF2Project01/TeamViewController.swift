@@ -21,6 +21,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        tableView.rowHeight = 170
         
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
@@ -40,7 +41,11 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         
            let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! TeamTableViewCell
            
+        myCell.imgTeam.image = UIImage(named: "teamwork")
         myCell.lblTeamName.text = equipos[indexPath.row].nombre
+        myCell.lblManager.text = equipos[indexPath.row].manager
+        myCell.lblCountry.text = equipos[indexPath.row].pais
+        
            return myCell
        }
 
