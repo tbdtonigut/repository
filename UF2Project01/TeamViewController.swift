@@ -42,6 +42,12 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
            let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! TeamTableViewCell
            
         myCell.imgTeam.image = UIImage(named: "teamwork")
+        myCell.lblTeamTitle.font = UIFont.boldSystemFont(ofSize: 16.0)
+        myCell.lblTeamTitle.text = "Equipo:"
+        myCell.lblManagerTitle.font = UIFont.boldSystemFont(ofSize: 16.0)
+        myCell.lblManagerTitle.text = "Manager:"
+        myCell.lblCountryTitle.font = UIFont.boldSystemFont(ofSize: 16.0)
+        myCell.lblCountryTitle.text = "País:"
         myCell.lblTeamName.text = equipos[indexPath.row].nombre
         myCell.lblManager.text = equipos[indexPath.row].manager
         myCell.lblCountry.text = equipos[indexPath.row].pais
