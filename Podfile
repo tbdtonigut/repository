@@ -7,5 +7,6 @@ target 'UF2Project01' do
 	
   pod 'GoogleSignIn'
   # Pods for UF2Project01
+  pod 'RealmSwift'
 
 end
