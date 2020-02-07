@@ -28,19 +28,21 @@ class TabBarController: UITabBarController {
         tabBar.layer.shadowRadius = 0.5
         tabBar.layer.shadowColor = UIColor.gray.cgColor
         tabBar.layer.shadowOpacity = 1
-        
+            
         
         let listEventos = EventViewController()
         _ = UINavigationController(rootViewController: listEventos)
         listEventos.tabBarItem = UITabBarItem(title: NSLocalizedString("Events", comment: ""), image: UIImage(named: "events"), tag: 0)
-        
+                
         let listCiclistas = CyclistViewController()
         _ = UINavigationController(rootViewController: listCiclistas)
         listCiclistas.tabBarItem = UITabBarItem(title: NSLocalizedString("Cyclists", comment: ""), image: UIImage(named: "cyclist"), tag: 1)
         
+
         let listEquipos = TeamViewController()
         _ = UINavigationController(rootViewController: listEquipos)
         listEquipos.tabBarItem = UITabBarItem(title: NSLocalizedString("Teams", comment: ""), image: UIImage(named: "teams"), tag: 2)
+        
         
         let controllers = [listEventos, listCiclistas, listEquipos]
         

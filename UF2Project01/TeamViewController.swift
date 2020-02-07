@@ -14,7 +14,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var equipos:[Equipo] = []
     
-    var arrayNombres: [String] = ["Team", "Team2", "Team3"]
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,11 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.rowHeight = 170
-        
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
-        
-//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Toni", manager: "Carlos", pais: "Españita"))
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.topItem?.title = "Equipos"
+
+//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
 //        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
 //        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
         

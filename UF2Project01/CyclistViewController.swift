@@ -13,6 +13,8 @@ class CyclistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.topItem?.title = "Ciclistas"
         // Do any additional setup after loading the view.
     }
 
