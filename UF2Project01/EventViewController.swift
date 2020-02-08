@@ -13,10 +13,10 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     
     var arrayNombres: [String] = ["Nombre", "Nombre2", "Nombre3"]
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
