@@ -12,6 +12,8 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     
+    var eventos:[Evento] = []
+    
     var arrayNombres: [String] = ["Nombre", "Nombre2", "Nombre3"]
         
     override func viewDidLoad() {
@@ -36,7 +38,10 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! EventTableViewCell
         
-        myCell.lblEventName.text = arrayNombres[indexPath.row]
+        myCell.lblTitleName.text = "Evento:"
+        myCell.lblName.text = [indexPath.row]
+        myCell.lblTitlePopu.text = "Popularidad"
+        myCell.lblPopu.text = 
         
         return myCell
        }
