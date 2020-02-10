@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Evento: Object {
+    
+    @objc dynamic var nombre : String = ""
+    @objc dynamic var popularidad : String = ""
+    
+    convenience init(nombre: String, popularidad: String) {
+        self.init()
+        self.nombre = nombre
+        self.popularidad = popularidad
+    }
+    
+    
+}
