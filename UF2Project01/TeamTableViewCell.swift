@@ -11,7 +11,14 @@ import UIKit
 class TeamTableViewCell: UITableViewCell {
 
     
+  
+    @IBOutlet weak var lblTeamTitle: UILabel!
     @IBOutlet weak var lblTeamName: UILabel!
+    @IBOutlet weak var lblCountryTitle: UILabel!
+    @IBOutlet weak var lblCountry: UILabel!
+    @IBOutlet weak var lblManagerTitle: UILabel!
+    @IBOutlet weak var lblManager: UILabel!
+    @IBOutlet weak var imgTeam: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
