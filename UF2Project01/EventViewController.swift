@@ -20,12 +20,16 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.topItem?.title = "Eventos"
         
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool){
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.topItem?.title = "Eventos"
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayNombres.count
        }
