@@ -14,7 +14,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var eventos:[Evento] = []
     
-    var arrayNombres: [String] = ["Nombre", "Nombre2", "Nombre3"]
+//    var arrayNombres: [String] = ["Nombre", "Nombre2", "Nombre3"]
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,10 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        
+        tableView.rowHeight = 170
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
-        // Do any additional setup after loading the view.
+        
+        verificarDatos()
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -33,16 +34,33 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayNombres.count
+        return eventos.count
        }
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! EventTableViewCell
         
+        myCell.imgEvent.image = UIImage(named: "events")
+        myCell.lblTitleName.font = UIFont.boldSystemFont(ofSize: 16.0)
         myCell.lblTitleName.text = "Evento:"
-        myCell.lblName.text = [indexPath.row]
+        myCell.lblName.text = eventos[indexPath.row].nombre
+        myCell.lblTitlePopu.font = UIFont.boldSystemFont(ofSize: 16.0)
         myCell.lblTitlePopu.text = "Popularidad"
-        myCell.lblPopu.text = 
+        myCell.lblPopu.text = String(eventos[indexPath.row].popularidad)
         
         return myCell
+       }
+    
+    func verificarDatos(){
+        if (DBManager.sharedInstance.getDataEvent()!.isEmpty){
+            cargarDatos()
+        }
+        eventos = Array(DBManager.sharedInstance.getDataEvent()!)
+    }
+    
+    func cargarDatos() {
+           DBManager.sharedInstance.addData(object: Evento(nombre: "Salon del manga", popularidad: 2))
+                  DBManager.sharedInstance.addData(object: Evento(nombre: "Ivanawa", popularidad: 10))
+                  DBManager.sharedInstance.addData(object: Evento(nombre: "Ivan huele mal", popularidad: 5))
        }
 }

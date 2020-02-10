@@ -32,6 +32,10 @@ class DBManager {
     func getDataTeam() -> Results<Equipo>? {
         return database?.objects(Equipo.self)
     }
+    
+    func getDataEvent() -> Results<Evento>? {
+        return database?.objects(Evento.self)
+    }
   
   //MARK: - DELETE
   

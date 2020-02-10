@@ -22,13 +22,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.rowHeight = 170
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
-       self.navigationController?.navigationBar.topItem?.title = "Equipos"
-
-//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
-//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
-//        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
-        
-        equipos = Array(DBManager.sharedInstance.getDataTeam()!)
+        verificarDatos()
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -57,5 +51,19 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         
            return myCell
        }
+    
+    
+    func verificarDatos(){
+        if (DBManager.sharedInstance.getDataTeam()!.isEmpty){
+            cargarDatos()
+        }
+        equipos = Array(DBManager.sharedInstance.getDataTeam()!)
+    }
+    
+    func cargarDatos() {
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
+    }
 
 }
