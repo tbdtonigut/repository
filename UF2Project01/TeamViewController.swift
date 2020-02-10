@@ -22,8 +22,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.rowHeight = 170
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
-        navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.topItem?.title = "Equipos"
+       self.navigationController?.navigationBar.topItem?.title = "Equipos"
 
 //        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
 //        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
@@ -31,7 +30,11 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         equipos = Array(DBManager.sharedInstance.getDataTeam()!)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool){
+        navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.topItem?.title = "Equipos"
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return equipos.count
