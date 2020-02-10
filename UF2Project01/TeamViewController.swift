@@ -23,7 +23,7 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
         navigationController?.navigationBar.prefersLargeTitles = true
-       self.navigationController?.navigationBar.topItem?.title = "Equipos"
+        self.navigationController?.navigationBar.topItem?.title = "Equipos"
 
 //        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
 //        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
