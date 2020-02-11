@@ -11,12 +11,16 @@ import UIKit
 class DetailViewControllerEventsViewController: UIViewController {
     
     @IBOutlet weak var btnBack: UIButton!
-    @IBOutlet weak var lblPaisEvento: UILabel!
     @IBOutlet weak var lblNombreEvento: UILabel!
-    @IBOutlet weak var lblPopuEvento: UILabel!
-    @IBOutlet weak var lblEtapasEvento: UILabel!
-    @IBOutlet weak var lblDistanciaKm: UILabel!
-    @IBOutlet weak var imgEvento: UIImageView!
+    @IBOutlet weak var lblTitlePopu: UILabel!
+    @IBOutlet weak var lblPopu: UILabel!
+    @IBOutlet weak var lblTitlePais: UILabel!
+    @IBOutlet weak var lblPais: UILabel!
+    @IBOutlet weak var lblTitleEtapas: UILabel!
+    @IBOutlet weak var lblEtapas: UILabel!
+    @IBOutlet weak var lblTitleRecorrido: UILabel!
+    @IBOutlet weak var lblRecorrido: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     var eventPassValue = Evento()
 
@@ -24,12 +28,21 @@ class DetailViewControllerEventsViewController: UIViewController {
         super.viewDidLoad()
         
 
+        lblNombreEvento.font = UIFont.boldSystemFont(ofSize: 40.0)
         lblNombreEvento.text = eventPassValue.nombre
-        lblPopuEvento.text = "Popularidad: " + String( eventPassValue.popularidad)
-        lblPaisEvento.text = "País: " +  eventPassValue.pais
-        lblEtapasEvento.text = "nº Etapas: " + String( eventPassValue.numeroEtapas)
-        lblDistanciaKm.text = "km: " +  String(eventPassValue.kmRecorrido)
-        imgEvento.image = UIImage (named: "eventoFoto")
+        lblTitlePopu.text = "Popularidad"
+        lblPopu.font =  UIFont.boldSystemFont(ofSize: 30.0)
+        lblPopu.text = String( eventPassValue.popularidad)
+        lblTitlePais.text = "País"
+        lblPais.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblPais.text = eventPassValue.pais
+        lblTitleEtapas.text = "Etapas"
+        lblEtapas.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblEtapas.text = String(eventPassValue.numeroEtapas)
+        lblTitleRecorrido.text = "KM"
+        lblRecorrido.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblRecorrido.text = String(eventPassValue.kmRecorrido)
+        imageView.image = UIImage (named: "eventoFoto")
         btnBack.setTitle("OK", for: UIControl.State.normal)
         
     }
