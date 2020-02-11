@@ -27,6 +27,8 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         verificarDatos()
         
+        eventos.sort(by: { $0.popularidad > $1.popularidad })
+        
 //        let vc = DetailViewControllerEventsViewController()
 //        present(vc, animated: true)
         
@@ -59,9 +61,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         print(eventos[indexPath.row])
         var eventToPass = Evento()
   
-        
-        let resultados = Array(DBManager.sharedInstance.getDataEvent()!)
-        eventToPass = buscarEvento(eventos: resultados, nombre: eventos[indexPath.row].nombre)!
+        eventToPass = buscarEvento(eventos: eventos, nombre: eventos[indexPath.row].nombre)!
         let vc = DetailViewControllerEventsViewController()
         vc.eventPassValue = eventToPass
         
