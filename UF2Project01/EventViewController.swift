@@ -29,9 +29,6 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         eventos.sort(by: { $0.popularidad > $1.popularidad })
         
-//        let vc = DetailViewControllerEventsViewController()
-//        present(vc, animated: true)
-        
     }
     
     override func viewWillAppear(_ animated: Bool){
