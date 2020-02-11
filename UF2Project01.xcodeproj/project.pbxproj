@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		336365EC23E09E2500766C08 /* Ciclista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365EB23E09E2500766C08 /* Ciclista.swift */; };
 		336365F023E0A0A000766C08 /* Equipo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336365EF23E0A0A000766C08 /* Equipo.swift */; };
+		33EFDC0223F31F5E00B29150 /* CyclistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EFDC0023F31F5E00B29150 /* CyclistTableViewCell.swift */; };
+		33EFDC0323F31F5E00B29150 /* CyclistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33EFDC0123F31F5E00B29150 /* CyclistTableViewCell.xib */; };
 		CC41C7BD47F03ED99474DA91 /* Pods_UF2Project01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */; };
 		ED1F1B5D23E9E65200252B21 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F1B5C23E9E65200252B21 /* DBManager.swift */; };
 		ED3C54B023E9D3AC00F668F5 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C54AE23E9D3AC00F668F5 /* TeamTableViewCell.swift */; };
@@ -39,6 +41,8 @@
 		312EE3F4B4DAD017338F1781 /* Pods-UF2Project01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UF2Project01.release.xcconfig"; path = "Target Support Files/Pods-UF2Project01/Pods-UF2Project01.release.xcconfig"; sourceTree = "<group>"; };
 		336365EB23E09E2500766C08 /* Ciclista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ciclista.swift; sourceTree = "<group>"; };
 		336365EF23E0A0A000766C08 /* Equipo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipo.swift; sourceTree = "<group>"; };
+		33EFDC0023F31F5E00B29150 /* CyclistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclistTableViewCell.swift; sourceTree = "<group>"; };
+		33EFDC0123F31F5E00B29150 /* CyclistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CyclistTableViewCell.xib; sourceTree = "<group>"; };
 		46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UF2Project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5400FB59CD59F45D4FC398A5 /* Pods-UF2Project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UF2Project01.debug.xcconfig"; path = "Target Support Files/Pods-UF2Project01/Pods-UF2Project01.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1F1B5C23E9E65200252B21 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				ED8D9AEE23D6037300647A7D /* LoginViewController.swift */,
 				ED8D9AED23D6037300647A7D /* LoginViewController.xib */,
 				ED5294F623E8A3C1004A8AB9 /* Assets.xcassets */,
+				33EFDC0023F31F5E00B29150 /* CyclistTableViewCell.swift */,
+				33EFDC0123F31F5E00B29150 /* CyclistTableViewCell.xib */,
 			);
 			path = UF2Project01;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				ED5294F723E8A3C1004A8AB9 /* Assets.xcassets in Resources */,
 				EDA72DDB238EC56900F79D32 /* ViewController.xib in Resources */,
 				ED5294FB23E8A86D004A8AB9 /* EventTableViewCell.xib in Resources */,
+				33EFDC0323F31F5E00B29150 /* CyclistTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +332,7 @@
 				ED1F1B5D23E9E65200252B21 /* DBManager.swift in Sources */,
 				336365EC23E09E2500766C08 /* Ciclista.swift in Sources */,
 				336365F023E0A0A000766C08 /* Equipo.swift in Sources */,
+				33EFDC0223F31F5E00B29150 /* CyclistTableViewCell.swift in Sources */,
 				ED5294DC23E886FB004A8AB9 /* ThemeManager.swift in Sources */,
 				ED63DE9323F20F9C00E198CA /* DetailViewControllerEventsViewController.swift in Sources */,
 			);
