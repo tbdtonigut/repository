@@ -7,19 +7,22 @@
 //
 
 import Foundation
-class Ciclista{
-    var nombre : String
-    var edad : Int
-    var pais : String
-    //Cambiar tipo
-    var equipo : String
-    var altura : Double
-    var peso : Double
-    var leader : Bool
-    //No lo tengo claro
-    var especialidad : String
+import RealmSwift
+
+class Ciclista: Object {
+    @objc dynamic var nombre : String = ""
+    @objc dynamic var edad : Int = 0
+    @objc dynamic var pais : String = ""
+    @objc dynamic var equipo : String = ""
+    @objc dynamic var altura : Double = 0.0
+    @objc dynamic var peso : Double = 0.0
+    @objc dynamic var leader : Bool = true
+    @objc dynamic var especialidad : String = ""
+    @objc dynamic var popularidad : Int = 0
     
-    init(nombre: String, edad:Int, pais: String, equipo: String, altura:Double, peso:Double, leader:Bool, especialidad:String) {
+    convenience init(nombre: String, edad:Int, pais: String, equipo: String, altura:Double, peso:Double, leader:Bool, especialidad:String, popularidad:Int) {
+        
+        self.init()
         self.nombre = nombre
         self.edad = edad
         self.pais = pais
@@ -28,6 +31,7 @@ class Ciclista{
         self.peso = peso
         self.leader = leader
         self.especialidad = especialidad
+        self.popularidad = popularidad
     }
 
 }

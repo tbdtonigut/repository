@@ -37,6 +37,9 @@ class DBManager {
         return database?.objects(Evento.self)
     }
   
+    func getDataCiclistas() -> Results<Ciclista>? {
+        return database?.objects(Ciclista.self)
+    }
   //MARK: - DELETE
   
   func deleteAllDatabase()  {

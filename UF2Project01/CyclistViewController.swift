@@ -24,6 +24,7 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.rowHeight = 170
         tableView.register(UINib(nibName: "CyclistTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
+        verificarDatos()
     }
 
     override func viewWillAppear(_ animated: Bool){
@@ -38,17 +39,34 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! CyclistTableViewCell
         myCell.imgCyclist.image = UIImage(named: "ciclista")
-        myCell.lblName
+        myCell.lblTitleName.font = UIFont.boldSystemFont(ofSize: 16.0)
+        myCell.lblTitleName.text = "Nombre:"
+        myCell.lblTitleLeader.font = UIFont.boldSystemFont(ofSize: 16.0)
+        myCell.lblTitleLeader.text = "Lider"
+        myCell.lblTitlePopu.font = UIFont.boldSystemFont(ofSize: 16.0)
+        myCell.lblTitlePopu.text = "Lider"
+        myCell.lblName.text = ciclistas[indexPath.row].nombre
+        if(ciclistas[indexPath.row].leader){
+            myCell.lblLeader.text = "Si"
+        }else{
+            myCell.lblLeader.text = "No"
+        }
+        myCell.lblPopu.text = String( ciclistas[indexPath.row].popularidad)
+        
+        return myCell
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func verificarDatos(){
+        if (DBManager.sharedInstance.getDataCiclistas()!.isEmpty){
+            cargarDatos()
+        }
+        ciclistas = Array(DBManager.sharedInstance.getDataCiclistas()!)
     }
-    */
-
+    
+    func cargarDatos() {
+        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: "cocinero", popularidad: 6))
+        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: "cocinero", popularidad: 2))
+        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: "cocinero", popularidad: 1))
+    }
+    
 }
