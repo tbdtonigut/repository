@@ -24,7 +24,7 @@ class DetailViewControllerEventsViewController: UIViewController {
         super.viewDidLoad()
         
 
-        lblNombreEvento.text = "Nombre: " +  eventPassValue.nombre
+        lblNombreEvento.text = eventPassValue.nombre
         lblPopuEvento.text = "Popularidad: " + String( eventPassValue.popularidad)
         lblPaisEvento.text = "País: " +  eventPassValue.pais
         lblEtapasEvento.text = "nº Etapas: " + String( eventPassValue.numeroEtapas)
