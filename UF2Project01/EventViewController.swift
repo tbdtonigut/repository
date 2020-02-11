@@ -22,7 +22,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        tableView.rowHeight = 170
+        tableView.rowHeight = 150
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
         verificarDatos()

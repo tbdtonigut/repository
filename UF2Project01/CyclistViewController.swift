@@ -21,10 +21,12 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-        tableView.rowHeight = 170
+        tableView.rowHeight = 195
         tableView.register(UINib(nibName: "CyclistTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
         verificarDatos()
+        
+        ciclistas.sort(by: {$0.popularidad > $1.popularidad})
     }
 
     override func viewWillAppear(_ animated: Bool){
@@ -38,7 +40,8 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! CyclistTableViewCell
-        myCell.imgCyclist.image = UIImage(named: "ciclista")
+        
+        myCell.imgCiclista.image = UIImage(named: "ciclista")
         myCell.lblTitleName.font = UIFont.boldSystemFont(ofSize: 16.0)
         myCell.lblTitleName.text = "Nombre:"
         myCell.lblTitleLeader.font = UIFont.boldSystemFont(ofSize: 16.0)

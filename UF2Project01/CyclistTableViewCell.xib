@@ -16,10 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="465" height="189"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-5P-wFy">
-                        <rect key="frame" x="11" y="32" width="212" height="112"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rs-SB-pAI">
                         <rect key="frame" x="352" y="28" width="66" height="37"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,12 +58,15 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LrS-pf-2yx" userLabel="imgCiclista">
+                        <rect key="frame" x="20" y="32" width="190" height="134"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageView" destination="SWX-5P-wFy" id="JMQ-QX-pod"/>
-                <outlet property="imgCyclist" destination="SWX-5P-wFy" id="L5p-IJ-N5l"/>
+                <outlet property="imgCiclista" destination="LrS-pf-2yx" id="3oa-ej-ZRD"/>
                 <outlet property="lblLeader" destination="wHx-BD-Ucw" id="52U-XT-2Dw"/>
                 <outlet property="lblName" destination="0Rs-SB-pAI" id="lx4-tm-b4N"/>
                 <outlet property="lblPopu" destination="T3I-WY-wzA" id="M6e-HZ-M5M"/>

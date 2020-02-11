@@ -10,14 +10,14 @@ import UIKit
 
 class CyclistTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imgCyclist: UIImageView!
+
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblLeader: UILabel!
     @IBOutlet weak var lblTitleName: UILabel!
     @IBOutlet weak var lblTitleLeader: UILabel!
     @IBOutlet weak var lblTitlePopu: UILabel!
     @IBOutlet weak var lblPopu: UILabel!
-    
+    @IBOutlet weak var imgCiclista: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
