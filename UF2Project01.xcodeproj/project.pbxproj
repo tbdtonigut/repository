@@ -13,6 +13,7 @@
 		33EFDC0323F31F5E00B29150 /* CyclistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33EFDC0123F31F5E00B29150 /* CyclistTableViewCell.xib */; };
 		CC41C7BD47F03ED99474DA91 /* Pods_UF2Project01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */; };
 		ED1F1B5D23E9E65200252B21 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F1B5C23E9E65200252B21 /* DBManager.swift */; };
+		ED21E2AD23F322E000F0C902 /* article-ley-trafico-ciclista-bicicleta-obligaciones-circular-96762-5268ec8b566f5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED21E2AC23F322E000F0C902 /* article-ley-trafico-ciclista-bicicleta-obligaciones-circular-96762-5268ec8b566f5.jpg */; };
 		ED3C54B023E9D3AC00F668F5 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C54AE23E9D3AC00F668F5 /* TeamTableViewCell.swift */; };
 		ED3C54B123E9D3AC00F668F5 /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3C54AF23E9D3AC00F668F5 /* TeamTableViewCell.xib */; };
 		ED5294D923E87ADE004A8AB9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5294D823E87ADE004A8AB9 /* TabBarController.swift */; };
@@ -46,6 +47,7 @@
 		46538F7C2B1DCF8D510AAD0D /* Pods_UF2Project01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UF2Project01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5400FB59CD59F45D4FC398A5 /* Pods-UF2Project01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UF2Project01.debug.xcconfig"; path = "Target Support Files/Pods-UF2Project01/Pods-UF2Project01.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1F1B5C23E9E65200252B21 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		ED21E2AC23F322E000F0C902 /* article-ley-trafico-ciclista-bicicleta-obligaciones-circular-96762-5268ec8b566f5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "article-ley-trafico-ciclista-bicicleta-obligaciones-circular-96762-5268ec8b566f5.jpg"; sourceTree = "<group>"; };
 		ED3C54AE23E9D3AC00F668F5 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
 		ED3C54AF23E9D3AC00F668F5 /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
 		ED5294D823E87ADE004A8AB9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				EDA72DDA238EC56900F79D32 /* ViewController.xib */,
 				ED8D9AEE23D6037300647A7D /* LoginViewController.swift */,
 				ED8D9AED23D6037300647A7D /* LoginViewController.xib */,
+				ED21E2AC23F322E000F0C902 /* article-ley-trafico-ciclista-bicicleta-obligaciones-circular-96762-5268ec8b566f5.jpg */,
 				ED5294F623E8A3C1004A8AB9 /* Assets.xcassets */,
 				33EFDC0023F31F5E00B29150 /* CyclistTableViewCell.swift */,
 				33EFDC0123F31F5E00B29150 /* CyclistTableViewCell.xib */,
@@ -247,6 +250,7 @@
 				ED5294E323E88827004A8AB9 /* EventViewController.xib in Resources */,
 				ED5294F723E8A3C1004A8AB9 /* Assets.xcassets in Resources */,
 				EDA72DDB238EC56900F79D32 /* ViewController.xib in Resources */,
+				ED21E2AD23F322E000F0C902 /* article-ley-trafico-ciclista-bicicleta-obligaciones-circular-96762-5268ec8b566f5.jpg in Resources */,
 				ED5294FB23E8A86D004A8AB9 /* EventTableViewCell.xib in Resources */,
 				33EFDC0323F31F5E00B29150 /* CyclistTableViewCell.xib in Resources */,
 			);
