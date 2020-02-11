@@ -19,13 +19,17 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.delegate = self
+        self.tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
         tableView.rowHeight = 170
         tableView.register(UINib(nibName: "EventTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
         
         verificarDatos()
+        
+//        let vc = DetailViewControllerEventsViewController()
+//        present(vc, animated: true)
+        
     }
     
     override func viewWillAppear(_ animated: Bool){
@@ -40,7 +44,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "customCellID", for: indexPath) as! EventTableViewCell
         
-        myCell.imgEvent.image = UIImage(named: "events")
+        myCell.imgEvent.image = UIImage(named: "eventoFoto")
         myCell.lblTitleName.font = UIFont.boldSystemFont(ofSize: 16.0)
         myCell.lblTitleName.text = "Evento:"
         myCell.lblName.text = eventos[indexPath.row].nombre
@@ -51,6 +55,19 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return myCell
        }
     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(eventos[indexPath.row])
+        var eventToPass = Evento()
+  
+        
+        let resultados = Array(DBManager.sharedInstance.getDataEvent()!)
+        eventToPass = buscarEvento(eventos: resultados, nombre: eventos[indexPath.row].nombre)!
+        let vc = DetailViewControllerEventsViewController()
+        vc.eventPassValue = eventToPass
+        
+        present(vc, animated: true)
+    }
+    
     func verificarDatos(){
         if (DBManager.sharedInstance.getDataEvent()!.isEmpty){
             cargarDatos()
@@ -59,8 +76,17 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func cargarDatos() {
-           DBManager.sharedInstance.addData(object: Evento(nombre: "Salon del manga", popularidad: 2))
-                  DBManager.sharedInstance.addData(object: Evento(nombre: "Ivanawa", popularidad: 10))
-                  DBManager.sharedInstance.addData(object: Evento(nombre: "Ivan huele mal", popularidad: 5))
+           DBManager.sharedInstance.addData(object: Evento(nombre: "awa", popularidad: 2, pais: "España", numeroEtapas: 2, kmRecorrido: 100))
+                  DBManager.sharedInstance.addData(object: Evento(nombre: "owo", popularidad: 10, pais: "Argentina", numeroEtapas: 10, kmRecorrido: 200))
+                  DBManager.sharedInstance.addData(object: Evento(nombre: "uwu", popularidad: 5, pais: "Brasil", numeroEtapas: 3, kmRecorrido: 500))
+    }
+    
+    func buscarEvento(eventos: [Evento], nombre: String) -> Evento? {
+           for evento in eventos {
+               if (evento.nombre == nombre) {
+                   return evento
+               }
+           }
+           return nil
        }
 }
