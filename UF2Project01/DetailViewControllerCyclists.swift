@@ -10,21 +10,39 @@ import UIKit
 
 class DetailViewControllerCyclists: UIViewController {
 
+    var ciclistaPass = Ciclista()
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var imgCiclista: UIImageView!
+    @IBOutlet weak var lblTituloEdad: UILabel!
+    @IBOutlet weak var lblEdad: UILabel!
+    
+    @IBOutlet weak var lblTituloPais: UILabel!
+    @IBOutlet weak var lblPais: UILabel!
+    @IBOutlet weak var lblTituloEquipo: UILabel!
+    @IBOutlet weak var lblEquipo: UILabel!
+    @IBOutlet weak var lblTituloAltura: UILabel!
+    @IBOutlet weak var lblAltura: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblNombre.font = UIFont.boldSystemFont(ofSize: 40.0)
+        lblNombre.text = ciclistaPass.nombre
+        imgCiclista.image = UIImage (named: "ciclista")
+        lblTituloEdad.text = "Edad"
+        lblEdad.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblEdad.text = String( ciclistaPass.edad)
+        lblTituloPais.text = "País"
+        lblPais.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblPais.text = ciclistaPass.pais
+        lblTituloEquipo.text = "Equipo"
+        lblEquipo.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblEquipo.text = ciclistaPass.equipo
+        lblTituloAltura.text = "Altura"
+        lblAltura.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblAltura.text = String(ciclistaPass.altura)
+        
+        
+        
 
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

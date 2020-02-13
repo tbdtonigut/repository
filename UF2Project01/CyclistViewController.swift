@@ -60,23 +60,50 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var ciclista2 = Ciclista()
+        var ciclistaPass = Ciclista()
         
-        ciclista2 = ciclistas[indexPath.row]
+        ciclistaPass = buscarCiclista(ciclistas: ciclistas, id: ciclistas[indexPath.row].id)!
+        print(ciclistaPass)
+        let vc = DetailViewControllerCyclists()
+        vc.ciclistaPass = ciclistaPass
         
-        print(ciclista2.especialidad)
+        present(vc, animated: true)
     }
     func verificarDatos(){
-        if (DBManager.sharedInstance.getDataCiclistas()!.isEmpty){
+        if (DBManager.sharedInstance.getDataTeam()!.isEmpty){
+            cargarDatosTeamCiclista()
+        } else if (DBManager.sharedInstance.getDataCiclistas()!.isEmpty){
             cargarDatos()
         }
         ciclistas = Array(DBManager.sharedInstance.getDataCiclistas()!)
     }
     
     func cargarDatos() {
-        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Bajada.especialidad(), popularidad: 6))
-        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: Especialidad.Crono.especialidad(), popularidad: 2))
-        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Montaña.especialidad(), popularidad: 1))
+        DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(),nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Bajada.especialidad(), popularidad: 6))
+        DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(), nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: Especialidad.Crono.especialidad(), popularidad: 2))
+        DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(), nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Montaña.especialidad(), popularidad: 1))
+    }
+    
+    func cargarDatosTeamCiclista() {
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
+        DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(),nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Bajada.especialidad(), popularidad: 6))
+        DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(), nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: Especialidad.Crono.especialidad(), popularidad: 2))
+        DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(), nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Montaña.especialidad(), popularidad: 1))
+    }
+    
+    func idIncremental() -> Int {
+        return DBManager.sharedInstance.getDataCiclistas()!.count + 1
+    }
+    
+    func buscarCiclista(ciclistas: [Ciclista], id: Int) -> Ciclista? {
+        for ciclista in ciclistas {
+            if (ciclista.id == id) {
+                return ciclista
+            }
+        }
+        return nil
     }
     
 }

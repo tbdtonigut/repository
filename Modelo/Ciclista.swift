@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 class Ciclista: Object {
+    @objc dynamic var id : Int = 0
     @objc dynamic var nombre : String = ""
     @objc dynamic var edad : Int = 0
     @objc dynamic var pais : String = ""
@@ -20,9 +21,10 @@ class Ciclista: Object {
     @objc dynamic var especialidad: String = ""
     @objc dynamic var popularidad : Int = 0
     
-    convenience init(nombre: String, edad:Int, pais: String, equipo: String, altura:Double, peso:Double, leader:Bool, especialidad: String, popularidad:Int) {
+    convenience init(id: Int, nombre: String, edad:Int, pais: String, equipo: String, altura:Double, peso:Double, leader:Bool, especialidad: String, popularidad:Int) {
         
         self.init()
+        self.id = id
         self.nombre = nombre
         self.edad = edad
         self.pais = pais

@@ -43,6 +43,7 @@ class DetailViewControllerEventsViewController: UIViewController {
         lblRecorrido.font = UIFont.boldSystemFont(ofSize: 30.0)
         lblRecorrido.text = String(eventPassValue.kmRecorrido)
         imageView.image = UIImage (named: "eventoFoto")
+        btnBack.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19.0)
         btnBack.setTitle("OK", for: UIControl.State.normal)
         
     }
