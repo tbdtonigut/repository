@@ -47,7 +47,7 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
         myCell.lblTitleLeader.font = UIFont.boldSystemFont(ofSize: 16.0)
         myCell.lblTitleLeader.text = "Lider"
         myCell.lblTitlePopu.font = UIFont.boldSystemFont(ofSize: 16.0)
-        myCell.lblTitlePopu.text = "Lider"
+        myCell.lblTitlePopu.text = "Popularidad"
         myCell.lblName.text = ciclistas[indexPath.row].nombre
         if(ciclistas[indexPath.row].leader){
             myCell.lblLeader.text = "Si"
@@ -59,6 +59,13 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
         return myCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var ciclista2 = Ciclista()
+        
+        ciclista2 = ciclistas[indexPath.row]
+        
+        print(ciclista2.especialidad)
+    }
     func verificarDatos(){
         if (DBManager.sharedInstance.getDataCiclistas()!.isEmpty){
             cargarDatos()
@@ -67,9 +74,9 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func cargarDatos() {
-        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: "cocinero", popularidad: 6))
-        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: "cocinero", popularidad: 2))
-        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: "cocinero", popularidad: 1))
+        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Bajada.especialidad(), popularidad: 6))
+        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: Especialidad.Crono.especialidad(), popularidad: 2))
+        DBManager.sharedInstance.addData(object: Ciclista(nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Montaña.especialidad(), popularidad: 1))
     }
     
 }

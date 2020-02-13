@@ -56,6 +56,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(eventos[indexPath.row])
+//        detailView
         var eventToPass = Evento()
   
         eventToPass = buscarEvento(eventos: eventos, nombre: eventos[indexPath.row].nombre)!

@@ -17,10 +17,10 @@ class Ciclista: Object {
     @objc dynamic var altura : Double = 0.0
     @objc dynamic var peso : Double = 0.0
     @objc dynamic var leader : Bool = true
-    @objc dynamic var especialidad : String = ""
+    @objc dynamic var especialidad: String = ""
     @objc dynamic var popularidad : Int = 0
     
-    convenience init(nombre: String, edad:Int, pais: String, equipo: String, altura:Double, peso:Double, leader:Bool, especialidad:String, popularidad:Int) {
+    convenience init(nombre: String, edad:Int, pais: String, equipo: String, altura:Double, peso:Double, leader:Bool, especialidad: String, popularidad:Int) {
         
         self.init()
         self.nombre = nombre
@@ -33,5 +33,4 @@ class Ciclista: Object {
         self.especialidad = especialidad
         self.popularidad = popularidad
     }
-
 }

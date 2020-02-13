@@ -32,6 +32,7 @@
 		ED63DE9423F20F9C00E198CA /* DetailViewControllerEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED63DE9223F20F9C00E198CA /* DetailViewControllerEventsViewController.xib */; };
 		ED8D9AEF23D6037300647A7D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8D9AED23D6037300647A7D /* LoginViewController.xib */; };
 		ED8D9AF023D6037300647A7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8D9AEE23D6037300647A7D /* LoginViewController.swift */; };
+		ED9684E623F5A72C00350F2A /* enumEspecialidad.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9684E523F5A72C00350F2A /* enumEspecialidad.swift */; };
 		EDA72DC7238EBF6500F79D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72DC6238EBF6500F79D32 /* AppDelegate.swift */; };
 		EDA72DC9238EBF6500F79D32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72DC8238EBF6500F79D32 /* SceneDelegate.swift */; };
 		EDA72DCB238EBF6500F79D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72DCA238EBF6500F79D32 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		ED63DE9223F20F9C00E198CA /* DetailViewControllerEventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewControllerEventsViewController.xib; sourceTree = "<group>"; };
 		ED8D9AED23D6037300647A7D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		ED8D9AEE23D6037300647A7D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED9684E523F5A72C00350F2A /* enumEspecialidad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumEspecialidad.swift; sourceTree = "<group>"; };
 		EDA72DC3238EBF6500F79D32 /* UF2Project02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UF2Project02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA72DC6238EBF6500F79D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA72DC8238EBF6500F79D32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1F1B5C23E9E65200252B21 /* DBManager.swift */,
+				ED9684E523F5A72C00350F2A /* enumEspecialidad.swift */,
 				336365EF23E0A0A000766C08 /* Equipo.swift */,
 				336365EB23E09E2500766C08 /* Ciclista.swift */,
 				EDB202D023F1C37B0051B2AB /* Evento.swift */,
@@ -341,6 +344,7 @@
 				336365EC23E09E2500766C08 /* Ciclista.swift in Sources */,
 				336365F023E0A0A000766C08 /* Equipo.swift in Sources */,
 				33EFDC0223F31F5E00B29150 /* CyclistTableViewCell.swift in Sources */,
+				ED9684E623F5A72C00350F2A /* enumEspecialidad.swift in Sources */,
 				ED5294DC23E886FB004A8AB9 /* ThemeManager.swift in Sources */,
 				ED63DE9323F20F9C00E198CA /* DetailViewControllerEventsViewController.swift in Sources */,
 			);
