@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewControllerCyclists" customModule="UF2Project02" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="CS9-Kv-Qwx" id="Ga9-BW-dGc"/>
+                <outlet property="btnBorrar" destination="z31-TB-aK0" id="Wbq-7b-jAt"/>
                 <outlet property="imgCiclista" destination="NFE-bf-NLC" id="9j0-3e-Sep"/>
                 <outlet property="lblAltura" destination="3gD-1z-zTV" id="6SJ-3F-hw4"/>
                 <outlet property="lblEdad" destination="2NR-Ri-3De" id="bKg-fZ-SMj"/>
@@ -98,6 +100,22 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS9-Kv-Qwx">
+                    <rect key="frame" x="335" y="35" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="cEW-VB-xWb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z31-TB-aK0">
+                    <rect key="frame" x="281" y="766" width="94" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="borrarCiclista:" destination="-1" eventType="touchUpInside" id="BHF-h7-nD7"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

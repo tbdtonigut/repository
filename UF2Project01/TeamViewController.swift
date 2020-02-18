@@ -61,9 +61,9 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func cargarDatos() {
-        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
-        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
-        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Equipo1", manager: "David", pais: "Argentina"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Equipo2", manager: "Mar", pais: "Cataluña"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Equipo3", manager: "Zoya", pais: "Escocia"))
     }
 
 }

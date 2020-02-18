@@ -8,7 +8,13 @@
 
 import UIKit
 
-class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, BotonBorrarDelegate {
+    
+    func borrarPulsado() {
+        verificarDatos()
+        tableView.reloadData()
+    }
+    
     
     
 
@@ -32,7 +38,10 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool){
         navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Ciclistas"
+        verificarDatos()
+        tableView.reloadData()
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ciclistas.count
@@ -63,11 +72,13 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
         var ciclistaPass = Ciclista()
         
         ciclistaPass = buscarCiclista(ciclistas: ciclistas, id: ciclistas[indexPath.row].id)!
-        print(ciclistaPass)
+        //print(ciclistaPass)
         let vc = DetailViewControllerCyclists()
+        vc.delegate = self
         vc.ciclistaPass = ciclistaPass
         
         present(vc, animated: true)
+        
     }
     func verificarDatos(){
         if (DBManager.sharedInstance.getDataTeam()!.isEmpty){
@@ -85,9 +96,9 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func cargarDatosTeamCiclista() {
-        DBManager.sharedInstance.addData(object: Equipo(nombre: "Carlos", manager: "David", pais: "Argentina"))
-        DBManager.sharedInstance.addData(object: Equipo(nombre: "Gerard", manager: "Mar", pais: "Cataluña"))
-        DBManager.sharedInstance.addData(object: Equipo(nombre: "Ivan", manager: "Zoya", pais: "Escocia"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Equipo1", manager: "David", pais: "Argentina"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Equipo2", manager: "Mar", pais: "Cataluña"))
+        DBManager.sharedInstance.addData(object: Equipo(nombre: "Equipo3", manager: "Zoya", pais: "Escocia"))
         DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(),nombre: "Gon", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Bajada.especialidad(), popularidad: 6))
         DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(), nombre: "Gen", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: false, especialidad: Especialidad.Crono.especialidad(), popularidad: 2))
         DBManager.sharedInstance.addData(object: Ciclista(id: idIncremental(), nombre: "Gan", edad: 5, pais: "pais1", equipo: (DBManager.sharedInstance.getDataTeam()?.randomElement()?.nombre)!, altura: 1.32, peso: 60.0, leader: true, especialidad: Especialidad.Montaña.especialidad(), popularidad: 1))
