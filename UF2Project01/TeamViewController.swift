@@ -21,13 +21,14 @@ class TeamViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.tableFooterView = UIView()
         tableView.rowHeight = 170
         tableView.register(UINib(nibName: "TeamTableViewCell", bundle: nil), forCellReuseIdentifier: "customCellID")
+     
         
         verificarDatos()
     }
     
     override func viewWillAppear(_ animated: Bool){
         navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.topItem?.title = "Equipos"
+self.navigationController?.navigationBar.topItem?.title = "Equipos"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

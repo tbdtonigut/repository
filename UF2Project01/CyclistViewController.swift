@@ -19,11 +19,13 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addButton: UIButton!
     
     var ciclistas:[Ciclista] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.backItem?.rightBarButtonItem?.title = "+"
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
@@ -38,6 +40,7 @@ class CyclistViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool){
         navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Ciclistas"
+            
         verificarDatos()
         tableView.reloadData()
     }
