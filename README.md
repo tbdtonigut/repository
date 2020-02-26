@@ -17,4 +17,5 @@ Segunda práctica de la uf2 de Swift. App con ciclistas, eventos y equipos.
 6. Para salir del detalle de las celdas usamos dismiss.
 7. Cuando se cargan las ventanas de la tabla, se comprueba a Realm si hay información, si no la hay se cargan 3 celdas.
 8. El detalle de ciclista incluye un botón para borrar la celda.
-9. Hemos usado enums para las especialidades de los ciclistas.
+9. Al borrarse todos los ciclistas, tenemos una función que vuelve a crear 3.
+10. Hemos usado enums para las especialidades de los ciclistas.
