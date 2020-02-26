@@ -1,7 +1,7 @@
-# PRACTICA2: APP CICLISMO
+# PRÁCTICA2: APP CICLISMO
 
 ## Descripción:
-Segunda práctica de la uf2 de Swift.
+Segunda práctica de la uf2 de Swift. App con ciclistas, eventos y equipos.
 
 ## Autores:
 - Toni Gutiérrez
