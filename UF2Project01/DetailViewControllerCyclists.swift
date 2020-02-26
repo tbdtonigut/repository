@@ -31,6 +31,15 @@ class DetailViewControllerCyclists: UIViewController {
     @IBOutlet weak var lblEquipo: UILabel!
     @IBOutlet weak var lblTituloAltura: UILabel!
     @IBOutlet weak var lblAltura: UILabel!
+    @IBOutlet weak var lblTituloPeso: UILabel!
+    @IBOutlet weak var lblPeso: UILabel!
+    @IBOutlet weak var lblTituloLeader: UILabel!
+    @IBOutlet weak var lblLeader: UILabel!
+    @IBOutlet weak var lblTituloEspecialidad: UILabel!
+    @IBOutlet weak var lblEspecialidad: UILabel!
+    @IBOutlet weak var lblTituloPopularidad: UILabel!
+    @IBOutlet weak var lblPopularidad: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +58,22 @@ class DetailViewControllerCyclists: UIViewController {
         lblTituloAltura.text = "Altura"
         lblAltura.font = UIFont.boldSystemFont(ofSize: 30.0)
         lblAltura.text = String(ciclistaPass.altura)
+        lblPeso.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblPeso.text = String(ciclistaPass.peso)
+        lblTituloPeso.text = "Peso"
+        lblLeader.font = UIFont.boldSystemFont(ofSize: 30.0)
+        if (ciclistaPass.leader) {
+            lblLeader.text = "Sí"
+        } else {
+            lblLeader.text = "No"
+        }
+        lblTituloLeader.text = "Lider"
+        lblEspecialidad.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblEspecialidad.text = ciclistaPass.especialidad
+        lblTituloEspecialidad.text = "Especialidad"
+        lblPopularidad.font = UIFont.boldSystemFont(ofSize: 30.0)
+        lblPopularidad.text = String(ciclistaPass.popularidad)
+        lblTituloPopularidad.text = "Popularidad"
         
         btnBack.titleLabel?.font = UIFont.boldSystemFont(ofSize: 19.0)
         btnBack.setTitle("OK", for: UIControl.State.normal)

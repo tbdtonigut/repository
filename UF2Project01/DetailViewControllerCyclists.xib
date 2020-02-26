@@ -15,12 +15,20 @@
                 <outlet property="lblAltura" destination="3gD-1z-zTV" id="6SJ-3F-hw4"/>
                 <outlet property="lblEdad" destination="2NR-Ri-3De" id="bKg-fZ-SMj"/>
                 <outlet property="lblEquipo" destination="dKd-8u-HC0" id="Oai-kN-OZ6"/>
+                <outlet property="lblEspecialidad" destination="ILn-Ek-qA3" id="G7n-Fh-3iX"/>
+                <outlet property="lblLeader" destination="vFx-dF-rvm" id="xNx-Vr-rYx"/>
                 <outlet property="lblNombre" destination="suT-bd-K1j" id="Z5o-2f-98e"/>
                 <outlet property="lblPais" destination="k1Y-fZ-HMd" id="iFW-PK-Vrh"/>
+                <outlet property="lblPeso" destination="810-US-Ufg" id="y6f-Dv-5YG"/>
+                <outlet property="lblPopularidad" destination="Bql-QE-n2d" id="BrP-vt-WWP"/>
                 <outlet property="lblTituloAltura" destination="ZiB-5M-DRm" id="RLT-Mj-kmR"/>
                 <outlet property="lblTituloEdad" destination="upK-Iv-5Jc" id="Ci5-n5-jaN"/>
                 <outlet property="lblTituloEquipo" destination="37y-la-6ia" id="0zM-lX-mOb"/>
+                <outlet property="lblTituloEspecialidad" destination="wYC-qB-y6K" id="SF8-ru-kpC"/>
+                <outlet property="lblTituloLeader" destination="3KP-OX-hMT" id="k5k-Ge-h7H"/>
                 <outlet property="lblTituloPais" destination="eMk-E7-46h" id="c6O-Xy-6NZ"/>
+                <outlet property="lblTituloPeso" destination="5Tv-Dq-L6T" id="si7-3A-oOZ"/>
+                <outlet property="lblTituloPopularidad" destination="ntY-JZ-dP6" id="7fG-SV-Su7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -116,6 +124,62 @@
                         <action selector="borrarCiclista:" destination="-1" eventType="touchUpInside" id="BHF-h7-nD7"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Tv-Dq-L6T">
+                    <rect key="frame" x="20" y="510" width="108" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="810-US-Ufg">
+                    <rect key="frame" x="117" y="499" width="152" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3KP-OX-hMT">
+                    <rect key="frame" x="20" y="548" width="108" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vFx-dF-rvm">
+                    <rect key="frame" x="117" y="537" width="152" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wYC-qB-y6K">
+                    <rect key="frame" x="20" y="586" width="108" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ILn-Ek-qA3">
+                    <rect key="frame" x="117" y="575" width="152" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ntY-JZ-dP6">
+                    <rect key="frame" x="20" y="624" width="108" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bql-QE-n2d">
+                    <rect key="frame" x="117" y="613" width="152" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
