@@ -1,11 +1,11 @@
-#PRACTICA2: APP CICLISMO
+# PRACTICA2: APP CICLISMO
 
-##Autores:
-Toni Gutiérrez
-Gerard Lloret
-Iván Ríos
+## Autores:
+- Toni Gutiérrez
+- Gerard Lloret
+- Iván Ríos
 
-##Descripción:
+## Descripción:
 La práctica empieza con un login con la cuenta de Google.
 Una vez registrado te dirigirá hacia una tabbar con 3 elementos, eventos, equipos y ciclistas.
 Cada uno de estos elementos tienen una table view enlazada con sus celdas personalizadas.
